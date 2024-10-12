@@ -1,7 +1,7 @@
 import os
 import json
 import sys
-import streamlit as st
+import streamlit as st # type: ignore
 from PIL import Image
 import numpy as np
 import cv2
@@ -10,7 +10,6 @@ import cv2
 input_images_dir = 'data/input_images'
 segmented_objects_dir = 'data/segmented_objects'
 output_dir = 'data/output_images'
-
 
 # Add directories to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../models')))
